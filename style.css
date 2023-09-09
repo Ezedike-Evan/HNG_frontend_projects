@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d3d3d3;
+}
+p{
+    text-transform: capitalize;
+    font-size: 17px;
+}
+span{
+    font-size: 17px;
+    font-weight: 700;
+}
+.profile-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    width: 90%;
+    background: #fff;
+    border-radius: 24px;
+    padding: 25px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+.profile-card::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 125px;
+    width: 100%;
+    border-radius: 24px 24px 0 0;
+    background-color: #4070f4;
+}
+.image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #4070f4;
+    padding: 3px;
+    margin-bottom: 10px;
+}
+.image .profile-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+.profile-card .text-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text-data .name{
+    font-size: 22px;
+    font-weight: 700;
+}
+.text-data .day{
+    margin: 25px 0 5px;
+}
+.github{
+    margin-top: 30px;
+}
+.github i{
+    font-size: 25px;
+}
+.github a{
+    color: black;
+}
+.github a i{
+    font-size: 50px;
+    margin: 0 20px;
+}
+@media (max-width:380px) {
+    p,span{
+        font-size: 15px;
+    }
+}
+
+@media (max-width:320px) {
+    p,span{
+        font-size: 12px;
+    }
+}
