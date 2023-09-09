@@ -3,7 +3,7 @@ const data = {
     userName : 'Ezedike-Egwom Evan',
     dayOfWeek : ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'],
     myTrack : 'Frontend',
-    githubURL : 'www.fuckmyass.com',
+    githubURL : 'https://github.com/Ezedike-Evan/HNG_frontend_projects/tree/stage-1',
     time : {
         hrs : '',
         mins : '',
