@@ -30,7 +30,7 @@ nav .first-part .outer-div{
     justify-content: center;
     align-items: center;
  }
-nav .first-part h2{
+.header-div nav .first-part h2{
     margin-left: 30px;
 }
 .header-div nav .search{

@@ -1,39 +1,16 @@
-import { useState, useEffect } from 'react'
 import './App.css'
-import axios  from 'axios'
-import Header from './component/Header'
-import FeaturedMovies from './component/Featured'
-import Footer from './component/footer'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './component/home'
+import IndividualMovie from './component/individualMovie';
 
-// figma_link = 'https://www.figma.com/file/tVfgoNfhYkQaUkh8LGqRab/MovieBox-(Community)?type=design&node-id=1220-324&mode=design&t=6998DWtjQrxz8mOf-0'
-function App() {
-  const [topVid , setTopVid] = useState({})
-  const num = Math. floor(Math. random() * 19) + 1
-
-  const options = {
-    method: 'GET',
-    headers: {
-      accept: 'application/json',
-      Authorization: `Bearer ${import.meta.env.VITE_READ_ACCESS_KEY}`
-    }
-  };
-
-  useEffect(()=>{
-    async function getPopularMovies(){
-      const res = await axios.get('https://api.themoviedb.org/3/movie/popular?language=en-US&page=1', options)
-                  await setTopVid(res.data.results[num])
-    }
-    getPopularMovies()
-  },[])
-
+const App = ()=>{
   return (
-    <>
-      <header style={{backgroundImage:`url(https://image.tmdb.org/t/p/original${topVid.backdrop_path})`}}>
-        <Header topVid={topVid} />
-      </header>
-      <FeaturedMovies options={options}/>
-      <Footer />
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/:id" element={<IndividualMovie />} />
+      </Routes>
+    </Router>
   )
 }
 

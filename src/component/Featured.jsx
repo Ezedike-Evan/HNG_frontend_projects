@@ -3,6 +3,7 @@ import {FaAngleDoubleRight} from 'react-icons/fa'
 import axios from 'axios'
 import { useEffect, useState } from 'react'
 import Card from './card'
+import { Link } from 'react-router-dom'
 
 const FeaturedMovies = ({options})=>{
     const [topMovies,setTopMovies] = useState([])
@@ -26,7 +27,9 @@ const FeaturedMovies = ({options})=>{
                 {
                     topMovies.map((topMovie)=>{
                         return(
-                            <Card id={topMovie.id} topMovie={topMovie} onClick/>
+                            <Link to={`/${topMovie.id}`} style={{color:'black',textDecoration:'none'}}>
+                                <Card id={topMovie.id} topMovie={topMovie} />
+                            </Link>
                         )
                     })
                 }
