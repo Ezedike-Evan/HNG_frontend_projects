@@ -1,0 +1,24 @@
+.card img{
+    width: 250px;
+}
+.card sub{
+    color: grey;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 10px 0;
+    display: block;
+}
+.card .detail{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card .detail *{
+    display: flex;
+    align-items: center;
+}
+.card .detail p{
+    font-size: 13px;
+    margin-left: 10px;
+}

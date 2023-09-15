@@ -2,9 +2,10 @@ import { useState, useEffect } from 'react'
 import './App.css'
 import axios  from 'axios'
 import Header from './component/Header'
+import FeaturedMovies from './component/Featured'
+import Footer from './component/footer'
 
-const REACT_APP_READ_ACCESS_KEY = 'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIwMmNmNmU4NGMwYTA4MGI0ODdiNzljZTAyNDI4MzIwMiIsInN1YiI6IjY1MDMwMjUzZmZjOWRlMGVlMTc4MGZkZiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.vj2KHgWpKg2ZaW1qB0I8pHAdV2fNwtbmy-43mbpfqMY'
-
+// figma_link = 'https://www.figma.com/file/tVfgoNfhYkQaUkh8LGqRab/MovieBox-(Community)?type=design&node-id=1220-324&mode=design&t=6998DWtjQrxz8mOf-0'
 function App() {
   const [topVid , setTopVid] = useState({})
   const num = Math. floor(Math. random() * 19) + 1
@@ -13,7 +14,7 @@ function App() {
     method: 'GET',
     headers: {
       accept: 'application/json',
-      Authorization: `Bearer ${REACT_APP_READ_ACCESS_KEY}`
+      Authorization: `Bearer ${import.meta.env.VITE_READ_ACCESS_KEY}`
     }
   };
 
@@ -27,10 +28,11 @@ function App() {
 
   return (
     <>
-        {console.log(topVid)}
       <header style={{backgroundImage:`url(https://image.tmdb.org/t/p/original${topVid.backdrop_path})`}}>
-        <Header />
+        <Header topVid={topVid} />
       </header>
+      <FeaturedMovies options={options}/>
+      <Footer />
     </>
   )
 }
