@@ -2,7 +2,7 @@ section{
     padding: 60px;
     color: black;
 }
-section>div{
+.featured>div{
     display: flex;
     justify-content: space-between;
     align-items: center;

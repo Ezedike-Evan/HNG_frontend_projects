@@ -1,16 +1,32 @@
 .individualNav{
     border-right: 1.5px solid black;
-    width: 15vw;
+    width: 20vw;
     height: 100vh;
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
-    padding: 25px 10px;
-}
-.individualNav .first-part{
-    display : flex;
-    align-items: center;
+    padding: 25px 0;
 }
 .individualNav .first-part h2{
     margin-left: 10px;
-    font-size: 21px;
+    font-size: 11px;
+}
+.individualNav ul{
+    margin-top: 40px;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.individualNav ul li{
+    padding: 20px 0;
+    margin: 5px 0;
+    width: 100%;
+    font-weight: 700;
+    font-size: 11px;
+    text-align: center;
+}
+.individualNav ul li:nth-child(2){
+    border-right: 3px solid red;
+    background-color: rgba(255, 0, 0, 0.15);
+    color: red;
 }
