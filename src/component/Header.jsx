@@ -22,7 +22,7 @@ const Header = ({topVid})=>{
                 </div>
             </nav>
             <div className="header-body">
-                <h1>{topVid.original_title}</h1>
+                <h1>{topVid.title}</h1>
                 <div className='detail'>
                     <div>
                         <LiaImdb size={38} />

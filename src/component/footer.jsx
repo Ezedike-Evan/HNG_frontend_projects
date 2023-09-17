@@ -6,10 +6,10 @@ const Footer = ()=>{
     return(
         <footer>
             <div className='socials'>
-                <RiFacebookFill size={30}/>
-                <IoLogoInstagram size={30}/>
-                <RiTwitterXLine size={30}/>
-                <IoLogoYoutube size={30}/>
+                <RiFacebookFill size={20}/>
+                <IoLogoInstagram size={20}/>
+                <RiTwitterXLine size={20}/>
+                <IoLogoYoutube size={20}/>
             </div>
             <div style={{width:'600px'}}>
                 <p>Conditions of Use</p>
