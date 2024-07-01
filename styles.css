@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    background-color: #d3d3d3;
+}
+p{
+    text-transform: capitalize;
+    font-size: 17px;
+}
+span{
+    font-size: 17px;
+    font-weight: 700;
+}
+.profile-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 564px;
+    width: 90%;
+    background: #fff;
+    border-radius: 24px;
+    padding: 25px 0;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+.image{
+    max-width: max-content;
+    width: 90vw;
+}
+.image .profile-img{
+    width: 100%;
+}
+.profile-card .text-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+.text-data .name{
+    font-size: 22px;
+    font-weight: 700;
+}
+.text-data .day{
+    margin: 25px 0 5px;
+}
+.text-data .email{
+    margin: 5px 0;
+    font-size: 17px;
+}
+h2{
+    margin-top: 30px;
+}
+ul{
+    padding: 0 20px ;
+}
+ul li{
+    margin: 5px 0;
+    text-wrap: wrap;
+}
+.logo{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 40px;
+}
+.logo img{
+    width: 50px;
+    height: 50px;
+}
+@media (max-width:420px) {
+    p,span{
+        font-size: 14px;
+    }
+}
+
+@media (max-width:355px) {
+    p,span{
+        font-size: 12px;
+    }
+}
