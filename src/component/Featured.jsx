@@ -22,7 +22,7 @@ const FeaturedMovies = ({options})=>{
         <section className='featured'>
             <div>
                 <h2>Featured Movie</h2>
-                <h6>See more <FaAngleDoubleRight style={{marginLeft:'20px'}}/></h6>
+                <h6>See more <FaAngleDoubleRight className='angle'/></h6>
             </div>
             <div className='cards'>
                 {
