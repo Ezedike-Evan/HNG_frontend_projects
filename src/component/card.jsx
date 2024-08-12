@@ -13,7 +13,7 @@ const Card = ({topMovie})=>{
             <div className='detail'>
                 <div>
                     <LiaImdb size={30} />
-                    <p>{`${topMovie.vote_average * 10} / 100`}</p>
+                    <p>{`${(topMovie.vote_average * 10).toFixed(2)} / 100`}</p>
                 </div>
                 <div>
                     <GiTomato size={20} />
