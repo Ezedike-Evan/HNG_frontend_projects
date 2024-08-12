@@ -8,8 +8,7 @@ header{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100vw;
-    height: 80vh;
+    height: 85vh;
 }
 .individualMovie{
     width: 85vw;
@@ -32,4 +31,11 @@ header{
     border-radius: 50px;
     padding: 3px 7px;
     margin: 0 10px  ;
+}
+
+/* Mobile Devices (up to 600px) */
+@media (max-width: 600px) {
+    header{
+        height: 100vh;
+    }   
 }
