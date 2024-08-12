@@ -11,7 +11,7 @@ const FeaturedMovies = ({options})=>{
 
     const getTopMovies = async()=>{
         const response = await axios.get('https://api.themoviedb.org/3/movie/top_rated',options)
-                         await setTopMovies(response.data.results)
+        await setTopMovies(response.data.results)
     }
 
     useEffect(()=>{

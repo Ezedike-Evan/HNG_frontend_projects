@@ -25,3 +25,16 @@ section .cards{
     place-content: center;
     place-items: center;
 }
+/* Mobile Devices (up to 600px) */
+@media (max-width: 600px) {
+    section .cards{
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Tablets (600px to 768px) */
+@media (min-width: 600px) and (max-width: 768px) {
+    section .cards{
+        grid-template-columns: 1fr 1fr;
+    }
+}

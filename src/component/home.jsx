@@ -28,11 +28,17 @@ const Home = ()=>{
 
     return(
         <>
-            <header style={{backgroundImage:`url(https://image.tmdb.org/t/p/original${topVid.backdrop_path})`}}>
-                <Header topVid={topVid} />
-            </header>
-            <FeaturedMovies options={options}/>
-            <Footer />
+          <header 
+            style={{
+              backgroundImage:`url(https://image.tmdb.org/t/p/original${topVid.backdrop_path})`,
+              backgroundSize:'cover',
+              backgroundRepeat:'no-repeat' 
+            }}
+          >
+            <Header topVid={topVid} />
+          </header>
+          <FeaturedMovies options={options}/>
+          <Footer />
         </>
     )
 }
